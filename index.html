@@ -15,13 +15,19 @@ section{padding:27px;margin-top:23px}h2{font-size:21px;letter-spacing:-.03em;mar
 .bar{height:100%;border-radius:20px;background:linear-gradient(90deg,#1c727a,#50b5a8)}
 .note{border-left:4px solid #1c727a;background:#eaf6f4;padding:16px 19px;border-radius:9px;margin-top:20px;font-size:13px;line-height:1.7}
 footer{font-size:12px;color:#647785;margin-top:24px;line-height:1.6}a{color:#176b70}
+.private-entry{background:#fafffe;border-color:#bbded9}.access-form{display:flex;flex-wrap:wrap;align-items:end;gap:10px;margin-top:17px}
+.access-form label{flex-basis:100%;font-size:13px;font-weight:700}
+.access-form input{background:white;border:1px solid #c3d4d6;border-radius:9px;padding:11px;font:inherit;width:150px}
+.access-form button,.private-link{display:inline-block;border:none;background:#15696e;color:#fff;border-radius:9px;padding:11px 17px;font:inherit;font-weight:700;cursor:pointer}
+.private-link:hover{background:#104f54;text-decoration:none}
+
 @media(max-width:850px){.cards{grid-template-columns:1fr 1fr}.groups{grid-template-columns:1fr}}
 @media(max-width:460px){.cards{grid-template-columns:1fr 1fr;gap:9px}.card{padding:15px}.number{font-size:30px}main{padding:20px 14px}header{padding:38px 20px}}
 </style></head><body>
 <header><div class="eyebrow">PORTFOLIO · SYNTHÈSE PUBLIQUE</div>
 <h1>Une vision d'ensemble des projets.</h1>
 <p>Un aperçu actualisé du portefeuille d'activités, des grandes catégories et du suivi de gestion, sans publier le contenu des dossiers privés.</p>
-<p style="font-size:12px">Dernière actualisation : 03/11/2026 à 09:32 · Heure de Paris</p></header>
+<p style="font-size:12px">Dernière actualisation : 03/11/2026 à 09:53 · Heure de Paris</p></header>
 <main><div class="cards">
 <div class="card"><div class="number">42</div><div class="label">Sujets recensés</div><div class="hint">Inventaire du portefeuille</div></div>
 <div class="card"><div class="number">15</div><div class="label">Priorités P1</div><div class="hint">Proposées, non validées</div></div>
@@ -29,7 +35,37 @@ footer{font-size:12px;color:#647785;margin-top:24px;line-height:1.6}a{color:#176
 <div class="card"><div class="number">0</div><div class="label">Tickets clôturés</div><div class="hint">Statut GitHub uniquement</div></div></div>
 <section><h2>Répartition des activités</h2><p class="muted">Vue agrégée des domaines, sans détails individuels.</p><div class="groups"><div class="group"><div class="line"><span>Entrepreneuriat</span><strong>6</strong></div><div class="track"><div class="bar" style="width:14.3%"></div></div></div><div class="group"><div class="line"><span>Projets techniques</span><strong>9</strong></div><div class="track"><div class="bar" style="width:21.4%"></div></div></div><div class="group"><div class="line"><span>Activités collectives</span><strong>7</strong></div><div class="track"><div class="bar" style="width:16.7%"></div></div></div><div class="group"><div class="line"><span>Parcours professionnel</span><strong>5</strong></div><div class="track"><div class="bar" style="width:11.9%"></div></div></div><div class="group"><div class="line"><span>Organisation</span><strong>4</strong></div><div class="track"><div class="bar" style="width:9.5%"></div></div></div><div class="group"><div class="line"><span>Créations</span><strong>5</strong></div><div class="track"><div class="bar" style="width:11.9%"></div></div></div><div class="group"><div class="line"><span>Vie personnelle</span><strong>6</strong></div><div class="track"><div class="bar" style="width:14.3%"></div></div></div></div></section>
 <section><h2>Dernières activités enregistrées</h2>
-<p class="muted"><strong>0</strong> ticket(s) modifié(s) depuis le relevé précédent. Cette mesure concerne les changements de suivi GitHub, pas nécessairement des livrables finalisés.</p>
+<p class="muted"><strong>1</strong> ticket(s) modifié(s) depuis le relevé précédent. Cette mesure concerne les changements de suivi GitHub, pas nécessairement des livrables finalisés.</p>
 <div class="note"><strong>Lecture des indicateurs :</strong> les statuts réels des dossiers, les échéances personnelles, les décisions internes et les pièces de travail ne sont pas publiés ici. Le tableau détaillé reste exclusivement dans le dépôt privé.</div></section>
-<footer>Publication automatisée depuis PILOTAGE_GLOBAL. Aucun détail nominatif, lien de projet interne ou document privé n'est inclus dans cette vue publique.</footer>
+<section id="espace-prive" class="private-entry">
+<h2>Accéder au tableau détaillé</h2>
+<p class="muted">Les données complètes restent dans un dépôt privé. Le code ci-dessous est un <strong>raccourci de navigation, pas une protection</strong> : la connexion à un compte GitHub autorisé reste obligatoire.</p>
+<form id="access-form" class="access-form">
+<label for="access-pin">Code rapide</label>
+<input id="access-pin" type="password" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" autocomplete="off" required>
+<button type="submit">Continuer</button>
+</form>
+<p id="access-status" class="muted" aria-live="polite"></p>
+<p id="private-target" hidden><a class="private-link" href="https://github.com/timetogrowup/PILOTAGE_GLOBAL/blob/main/TABLEAU_DE_BORD.html" target="_blank" rel="noopener noreferrer">Ouvrir le tableau détaillé sur GitHub</a><span class="muted" style="display:block;margin-top:10px">GitHub contrôle les permissions. Pour utiliser le tableau HTML interactif, télécharge le fichier depuis le dépôt privé.</span></p>
+</section>
+<script>
+(function(){
+var form=document.getElementById('access-form');
+form.addEventListener('submit',function(event){
+event.preventDefault();
+var pin=document.getElementById('access-pin');
+var status=document.getElementById('access-status');
+var link=document.getElementById('private-target');
+if(pin.value==='1405'){
+link.hidden=false;
+status.textContent='Lien affiché. Une connexion GitHub autorisée reste nécessaire.';
+}else{
+link.hidden=true;
+status.textContent='Code rapide incorrect.';
+}
+pin.value='';
+});
+})();
+</script>
+<footer>Publication automatisée. Les dossiers détaillés ne sont pas présents sur cette page publique ; ils restent accessibles uniquement avec les autorisations GitHub appropriées.</footer>
 </main></body></html>
