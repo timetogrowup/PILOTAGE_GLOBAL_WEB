@@ -15,6 +15,30 @@ section{padding:27px;margin-top:23px}h2{font-size:21px;letter-spacing:-.03em;mar
 .bar{height:100%;border-radius:20px;background:linear-gradient(90deg,#1c727a,#50b5a8)}
 .note{border-left:4px solid #1c727a;background:#eaf6f4;padding:16px 19px;border-radius:9px;margin-top:20px;font-size:13px;line-height:1.7}
 footer{font-size:12px;color:#647785;margin-top:24px;line-height:1.6}a{color:#176b70}
+header .topnav{display:flex;gap:9px;flex-wrap:wrap;margin-top:25px}
+header .topnav a{color:#eaf8f6;text-decoration:none;background:#ffffff1a;border:1px solid #ffffff38;border-radius:30px;padding:8px 13px;font-size:12px;font-weight:650}
+header .topnav a:hover{background:#ffffff32}
+.hero-details{color:#d6e8ea;font-size:13px;max-width:770px}
+.kicker{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#477681;font-weight:850}
+.statsline{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}
+.statpill{background:#eaf6f3;border-radius:8px;padding:10px 13px;font-weight:750;font-size:12px;color:#18676d}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.breakdown-row{display:flex;justify-content:space-between;gap:10px;font-size:13px;margin:17px 0 7px}
+.breakdown-row small{color:#68818a}
+.bar.p1{background:#dc8c52}.bar.p2{background:#3c8f94}.bar.p3{background:#91a6af}
+.table-wrap{width:100%;overflow-x:auto;margin-top:16px}
+table{width:100%;border-collapse:collapse;font-size:13px;text-align:left}
+th,td{padding:12px 13px;border-bottom:1px solid #e4ecee}
+thead th{color:#647785;font-size:11px;letter-spacing:.07em;text-transform:uppercase;background:#f3f8f8}
+tbody th{font-weight:650}
+tbody tr:nth-child(even){background:#fafcfc}
+.alignright{text-align:right}
+.section-lead{max-width:830px}
+ins{color:#1d6974;text-decoration:none}
+summary{cursor:pointer;color:#176b70;font-weight:750;padding:10px 0}
+details p{padding:0 4px}
+@media(max-width:800px){.split{grid-template-columns:1fr}th,td{padding:9px 7px}header .topnav{gap:6px}header .topnav a{padding:7px 9px}}
+
 .private-entry{background:#fafffe;border-color:#bbded9}.access-form{display:flex;flex-wrap:wrap;align-items:end;gap:10px;margin-top:17px}
 .access-form label{flex-basis:100%;font-size:13px;font-weight:700}
 .access-form input{background:white;border:1px solid #c3d4d6;border-radius:9px;padding:11px;font:inherit;width:150px}
@@ -27,16 +51,24 @@ footer{font-size:12px;color:#647785;margin-top:24px;line-height:1.6}a{color:#176
 <header><div class="eyebrow">PORTFOLIO · SYNTHÈSE PUBLIQUE</div>
 <h1>Une vision d'ensemble des projets.</h1>
 <p>Un aperçu actualisé du portefeuille d'activités, des grandes catégories et du suivi de gestion, sans publier le contenu des dossiers privés.</p>
-<p style="font-size:12px">Dernière actualisation : 03/11/2026 à 10:04 · Heure de Paris</p></header>
+<p class="hero-details">Le portefeuille recense 42 sujets répartis en 7 domaines. 15 priorités P1 sont proposées, sans validation automatique du niveau d&#x27;avancement. Le suivi comptabilise 13 tickets GitHub, dont 13 ouverts.</p>
+<nav class="topnav" aria-label="Navigation dans les indicateurs"><a href="#repartition">Activités</a><a href="#priorites">Priorités</a><a href="#suivi">Suivi</a><a href="#historique">Historique</a><a href="#espace-prive">Espace privé</a></nav>
+<p style="font-size:12px">Dernière actualisation : 03/11/2026 à 10:49 · Heure de Paris</p></header>
 <main><div class="cards">
 <div class="card"><div class="number">42</div><div class="label">Sujets recensés</div><div class="hint">Inventaire du portefeuille</div></div>
 <div class="card"><div class="number">15</div><div class="label">Priorités P1</div><div class="hint">Proposées, non validées</div></div>
 <div class="card"><div class="number">13</div><div class="label">Actions ouvertes</div><div class="hint">Tickets du pilotage</div></div>
 <div class="card"><div class="number">0</div><div class="label">Tickets clôturés</div><div class="hint">Statut GitHub uniquement</div></div></div>
-<section><h2>Répartition des activités</h2><p class="muted">Vue agrégée des domaines, sans détails individuels.</p><div class="groups"><div class="group"><div class="line"><span>Entrepreneuriat</span><strong>6</strong></div><div class="track"><div class="bar" style="width:14.3%"></div></div></div><div class="group"><div class="line"><span>Projets techniques</span><strong>9</strong></div><div class="track"><div class="bar" style="width:21.4%"></div></div></div><div class="group"><div class="line"><span>Activités collectives</span><strong>7</strong></div><div class="track"><div class="bar" style="width:16.7%"></div></div></div><div class="group"><div class="line"><span>Parcours professionnel</span><strong>5</strong></div><div class="track"><div class="bar" style="width:11.9%"></div></div></div><div class="group"><div class="line"><span>Organisation</span><strong>4</strong></div><div class="track"><div class="bar" style="width:9.5%"></div></div></div><div class="group"><div class="line"><span>Créations</span><strong>5</strong></div><div class="track"><div class="bar" style="width:11.9%"></div></div></div><div class="group"><div class="line"><span>Vie personnelle</span><strong>6</strong></div><div class="track"><div class="bar" style="width:14.3%"></div></div></div></div></section>
-<section><h2>Dernières activités enregistrées</h2>
-<p class="muted"><strong>0</strong> ticket(s) modifié(s) depuis le relevé précédent. Cette mesure concerne les changements de suivi GitHub, pas nécessairement des livrables finalisés.</p>
+<section id="repartition"><div class="kicker">01 · Structure du portefeuille</div><h2>Répartition des activités</h2><p class="muted section-lead">Sept grandes familles d’activités, présentées sans nom de dossier ou d’organisation. Les barres représentent la part de chaque domaine dans le portefeuille.</p><div class="groups"><div class="group"><div class="line"><span>Entrepreneuriat</span><strong>6</strong></div><div class="track"><div class="bar" style="width:14.3%"></div></div></div><div class="group"><div class="line"><span>Projets techniques</span><strong>9</strong></div><div class="track"><div class="bar" style="width:21.4%"></div></div></div><div class="group"><div class="line"><span>Activités collectives</span><strong>7</strong></div><div class="track"><div class="bar" style="width:16.7%"></div></div></div><div class="group"><div class="line"><span>Parcours professionnel</span><strong>5</strong></div><div class="track"><div class="bar" style="width:11.9%"></div></div></div><div class="group"><div class="line"><span>Organisation</span><strong>4</strong></div><div class="track"><div class="bar" style="width:9.5%"></div></div></div><div class="group"><div class="line"><span>Créations</span><strong>5</strong></div><div class="track"><div class="bar" style="width:11.9%"></div></div></div><div class="group"><div class="line"><span>Vie personnelle</span><strong>6</strong></div><div class="track"><div class="bar" style="width:14.3%"></div></div></div></div>
+<details><summary>Afficher la répartition des priorités par domaine</summary><div class="table-wrap"><table><thead><tr><th>Domaine générique</th><th>Total</th><th>P1</th><th>P2</th><th>P3</th></tr></thead><tbody><tr><th scope="row">Entrepreneuriat</th><td>6</td><td>5</td><td>1</td><td>0</td></tr><tr><th scope="row">Projets techniques</th><td>9</td><td>1</td><td>6</td><td>2</td></tr><tr><th scope="row">Activités collectives</th><td>7</td><td>4</td><td>3</td><td>0</td></tr><tr><th scope="row">Parcours professionnel</th><td>5</td><td>3</td><td>2</td><td>0</td></tr><tr><th scope="row">Organisation</th><td>4</td><td>2</td><td>1</td><td>1</td></tr><tr><th scope="row">Créations</th><td>5</td><td>0</td><td>5</td><td>0</td></tr><tr><th scope="row">Vie personnelle</th><td>6</td><td>0</td><td>5</td><td>1</td></tr></tbody></table></div><p class="muted">Priorités proposées : P1, à examiner ; P2, à planifier ; P3, à réévaluer. Elles ne sont pas des engagements de livraison.</p></details></section>
+<section id="priorites"><div class="kicker">02 · Arbitrages proposés</div><h2>Comment se répartissent les priorités ?</h2><p class="muted">Ce classement est une première proposition, pas un plan validé.</p><div class="split"><div><div class="breakdown-row"><span><b>P1</b> · À examiner en priorité</span><span><strong>15</strong> <small>36 %</small></span></div><div class="track"><div class="bar p1" style="width:35.7%"></div></div><div class="breakdown-row"><span><b>P2</b> · À planifier</span><span><strong>23</strong> <small>55 %</small></span></div><div class="track"><div class="bar p2" style="width:54.8%"></div></div><div class="breakdown-row"><span><b>P3</b> · À réévaluer</span><span><strong>4</strong> <small>10 %</small></span></div><div class="track"><div class="bar p3" style="width:9.5%"></div></div></div><div><div class="note"><strong>Que signifient ces niveaux ?</strong><p><b>P1 :</b> sujets à examiner d’abord.</p><p><b>P2 :</b> sujets à planifier.</p><p><b>P3 :</b> sujets conservés pour réévaluation.</p><p>Aucun pourcentage de réalisation n’est calculé sans données métier vérifiées.</p></div></div></div></section>
+<section id="suivi"><div class="kicker">03 · Pilotage observé</div><h2>Suivi des actions</h2>
+<p class="muted">Les tickets renseignent les opérations de suivi dans GitHub. Leur statut est distinct de l’avancement des projets.</p>
+<div class="statsline"><span class="statpill">13 ouvert(s)</span><span class="statpill">0 clôturé(s)</span><span class="statpill">1 modifié(s) depuis le relevé précédent</span></div>
 <div class="note"><strong>Lecture des indicateurs :</strong> les statuts réels des dossiers, les échéances personnelles, les décisions internes et les pièces de travail ne sont pas publiés ici. Le tableau détaillé reste exclusivement dans le dépôt privé.</div></section>
+<section id="historique"><div class="kicker">04 · Évolution enregistrée</div><h2>Historique du suivi</h2><p class="muted">Historique limité aux 2 relevés quotidiens disponibles. Les dates antérieures ne sont pas reconstituées.</p>
+<div class="table-wrap"><table><thead><tr><th>Date</th><th>Dossiers recensés</th><th>Tickets ouverts</th><th>Tickets clôturés</th><th>Tickets modifiés</th></tr></thead><tbody><tr><th scope="row">2026-11-02</th><td>42</td><td>11</td><td>0</td><td>0</td></tr><tr><th scope="row">2026-11-03</th><td>42</td><td>13</td><td>0</td><td>1</td></tr></tbody></table></div>
+<p class="muted">Cette série concerne les relevés disponibles ; elle ne reconstitue pas les modifications entre deux relevés ni les progrès métiers.</p></section>
 <section id="espace-prive" class="private-entry">
 <h2>Accéder au tableau détaillé</h2>
 <p class="muted">Les données complètes restent dans un dépôt privé. Le code ci-dessous est un <strong>raccourci de navigation, pas une protection</strong> : la connexion à un compte GitHub autorisé reste obligatoire.</p>
