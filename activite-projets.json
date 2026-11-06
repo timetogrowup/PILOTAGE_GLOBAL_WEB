@@ -1,20 +1,20 @@
 {
-  "generated_at": null,
-  "method": "En attente du premier relevé GitHub. Les dates et nombres ne sont jamais inventés.",
+  "generated_at": "2026-11-06",
+  "method": "Jours distincts de commits GitHub (par dépôt associé provisoirement), hors actions automatiques identifiées. Une association de dépôt peut couvrir plusieurs projets.",
   "projects": {
     "PG-001": {
-      "last_activity_date": null,
-      "days_since_last": null,
-      "active_days_total": null,
-      "active_days_30": null,
-      "coverage": "non_disponible"
+      "last_activity_date": "2026-11-01",
+      "days_since_last": 5,
+      "active_days_total": 10,
+      "active_days_30": 6,
+      "coverage": "historique_complet"
     },
     "PG-002": {
-      "last_activity_date": null,
-      "days_since_last": null,
-      "active_days_total": null,
-      "active_days_30": null,
-      "coverage": "non_disponible"
+      "last_activity_date": "2026-11-01",
+      "days_since_last": 5,
+      "active_days_total": 10,
+      "active_days_30": 6,
+      "coverage": "historique_complet"
     },
     "PG-003": {
       "last_activity_date": null,
@@ -31,18 +31,18 @@
       "coverage": "non_disponible"
     },
     "PG-005": {
-      "last_activity_date": null,
-      "days_since_last": null,
-      "active_days_total": null,
-      "active_days_30": null,
-      "coverage": "non_disponible"
+      "last_activity_date": "2026-11-01",
+      "days_since_last": 5,
+      "active_days_total": 10,
+      "active_days_30": 6,
+      "coverage": "historique_complet"
     },
     "PG-006": {
-      "last_activity_date": null,
-      "days_since_last": null,
-      "active_days_total": null,
-      "active_days_30": null,
-      "coverage": "non_disponible"
+      "last_activity_date": "2026-11-01",
+      "days_since_last": 5,
+      "active_days_total": 10,
+      "active_days_30": 6,
+      "coverage": "historique_complet"
     },
     "PG-007": {
       "last_activity_date": null,
@@ -136,11 +136,11 @@
       "coverage": "non_disponible"
     },
     "PG-020": {
-      "last_activity_date": null,
-      "days_since_last": null,
-      "active_days_total": null,
-      "active_days_30": null,
-      "coverage": "non_disponible"
+      "last_activity_date": "2026-11-05",
+      "days_since_last": 1,
+      "active_days_total": 6,
+      "active_days_30": 6,
+      "coverage": "historique_complet"
     },
     "PG-021": {
       "last_activity_date": null,
