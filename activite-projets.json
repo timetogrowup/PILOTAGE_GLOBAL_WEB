@@ -45,18 +45,18 @@
       "coverage": "non_disponible"
     },
     "PG-007": {
-      "last_activity_date": null,
-      "days_since_last": null,
-      "active_days_total": null,
-      "active_days_30": null,
-      "coverage": "non_disponible"
+      "last_activity_date": "2026-11-02",
+      "days_since_last": 5,
+      "active_days_total": 4,
+      "active_days_30": 4,
+      "coverage": "historique_complet"
     },
     "PG-008": {
-      "last_activity_date": null,
-      "days_since_last": null,
-      "active_days_total": null,
-      "active_days_30": null,
-      "coverage": "non_disponible"
+      "last_activity_date": "2026-10-27",
+      "days_since_last": 11,
+      "active_days_total": 1,
+      "active_days_30": 1,
+      "coverage": "historique_complet"
     },
     "PG-009": {
       "last_activity_date": null,
@@ -66,18 +66,18 @@
       "coverage": "non_disponible"
     },
     "PG-010": {
-      "last_activity_date": null,
-      "days_since_last": null,
-      "active_days_total": null,
-      "active_days_30": null,
-      "coverage": "non_disponible"
+      "last_activity_date": "2026-10-26",
+      "days_since_last": 12,
+      "active_days_total": 1,
+      "active_days_30": 1,
+      "coverage": "historique_complet"
     },
     "PG-011": {
-      "last_activity_date": null,
-      "days_since_last": null,
-      "active_days_total": null,
-      "active_days_30": null,
-      "coverage": "non_disponible"
+      "last_activity_date": "2026-11-05",
+      "days_since_last": 2,
+      "active_days_total": 3,
+      "active_days_30": 3,
+      "coverage": "historique_complet"
     },
     "PG-012": {
       "last_activity_date": null,
@@ -108,11 +108,11 @@
       "coverage": "non_disponible"
     },
     "PG-016": {
-      "last_activity_date": null,
-      "days_since_last": null,
-      "active_days_total": null,
-      "active_days_30": null,
-      "coverage": "non_disponible"
+      "last_activity_date": "2026-10-26",
+      "days_since_last": 12,
+      "active_days_total": 1,
+      "active_days_30": 1,
+      "coverage": "historique_complet"
     },
     "PG-017": {
       "last_activity_date": null,
@@ -206,11 +206,11 @@
       "coverage": "non_disponible"
     },
     "PG-030": {
-      "last_activity_date": null,
-      "days_since_last": null,
-      "active_days_total": null,
-      "active_days_30": null,
-      "coverage": "non_disponible"
+      "last_activity_date": "2026-10-27",
+      "days_since_last": 11,
+      "active_days_total": 1,
+      "active_days_30": 1,
+      "coverage": "historique_complet"
     },
     "PG-031": {
       "last_activity_date": null,
@@ -269,11 +269,11 @@
       "coverage": "non_disponible"
     },
     "PG-039": {
-      "last_activity_date": null,
-      "days_since_last": null,
-      "active_days_total": null,
-      "active_days_30": null,
-      "coverage": "non_disponible"
+      "last_activity_date": "2026-11-02",
+      "days_since_last": 5,
+      "active_days_total": 3,
+      "active_days_30": 3,
+      "coverage": "historique_complet"
     },
     "PG-040": {
       "last_activity_date": null,
@@ -290,11 +290,11 @@
       "coverage": "non_disponible"
     },
     "PG-042": {
-      "last_activity_date": null,
-      "days_since_last": null,
-      "active_days_total": null,
-      "active_days_30": null,
-      "coverage": "non_disponible"
+      "last_activity_date": "2026-10-26",
+      "days_since_last": 12,
+      "active_days_total": 1,
+      "active_days_30": 1,
+      "coverage": "historique_complet"
     }
   }
 }
