@@ -39,10 +39,7 @@ summary{cursor:pointer;color:#176b70;font-weight:750;padding:10px 0}
 details p{padding:0 4px}
 @media(max-width:800px){.split{grid-template-columns:1fr}th,td{padding:9px 7px}header .topnav{gap:6px}header .topnav a{padding:7px 9px}}
 
-.private-entry{background:#fafffe;border-color:#bbded9}.access-form{display:flex;flex-wrap:wrap;align-items:end;gap:10px;margin-top:17px}
-.access-form label{flex-basis:100%;font-size:13px;font-weight:700}
-.access-form input{background:white;border:1px solid #c3d4d6;border-radius:9px;padding:11px;font:inherit;width:150px}
-.access-form button,.private-link{display:inline-block;border:none;background:#15696e;color:#fff;border-radius:9px;padding:11px 17px;font:inherit;font-weight:700;cursor:pointer}
+.private-entry{background:#fafffe;border-color:#bbded9}.private-link{display:inline-block;border:none;background:#15696e;color:#fff;border-radius:9px;padding:11px 17px;font:inherit;font-weight:700;cursor:pointer}
 .private-link:hover{background:#104f54;text-decoration:none}
 
 @media(max-width:850px){.cards{grid-template-columns:1fr 1fr}.groups{grid-template-columns:1fr}}
@@ -54,7 +51,7 @@ details p{padding:0 4px}
 <p>Un aperçu actualisé du portefeuille d'activités, des grandes catégories et du suivi de gestion, sans publier le contenu des dossiers privés.</p>
 <p class="hero-details">Le portefeuille recense 42 sujets répartis en 7 domaines. 15 priorités P1 sont proposées, sans validation automatique du niveau d&#x27;avancement. Le suivi comptabilise 13 tickets GitHub, dont 13 ouverts.</p>
 <nav class="topnav" aria-label="Navigation dans les indicateurs"><a href="pilotage-public/dossiers.html">Projets</a><a href="#qualite-activite">Qualité</a><a href="#repartition">Activités</a><a href="#priorites">Priorités</a><a href="#suivi">Suivi</a><a href="#historique">Historique</a><a href="#espace-prive">Espace privé</a></nav>
-<p style="font-size:12px">Dernière actualisation : 07/11/2026 à 20:03 · Heure de Paris</p></header>
+<p style="font-size:12px">Dernière actualisation : 07/11/2026 à 20:30 · Heure de Paris</p></header>
 <main><div class="cards">
 <div class="card"><div class="number">42</div><div class="label">Sujets recensés</div><div class="hint">Inventaire du portefeuille</div></div>
 <div class="card"><div class="number">15</div><div class="label">Priorités P1</div><div class="hint">Proposées, non validées</div></div>
@@ -67,39 +64,10 @@ details p{padding:0 4px}
 <section id="suivi"><div class="kicker">03 · Pilotage observé</div><h2>Suivi des actions</h2>
 <p class="muted">Les tickets renseignent les opérations de suivi dans GitHub. Leur statut est distinct de l’avancement des projets.</p>
 <div class="statsline"><span class="statpill">13 ouvert(s)</span><span class="statpill">0 clôturé(s)</span><span class="statpill">0 modifié(s) depuis le relevé précédent</span></div>
-<div class="note"><strong>Lecture des indicateurs :</strong> les statuts réels des dossiers, les échéances personnelles, les décisions internes et les pièces de travail ne sont pas publiés ici. Le tableau détaillé reste exclusivement dans le dépôt privé.</div></section>
+<div class="note"><strong>Lecture des indicateurs :</strong> les statuts réels des dossiers, les échéances personnelles, les décisions internes et les pièces de travail ne sont pas publiés ici. Le tableau détaillé est accessible dans l’espace privé authentifié.</div></section>
 <section id="historique"><div class="kicker">04 · Évolution enregistrée</div><h2>Historique du suivi</h2><p class="muted">Historique limité aux 6 relevés quotidiens disponibles. Les dates antérieures ne sont pas reconstituées.</p>
 <div class="table-wrap"><table><thead><tr><th>Date</th><th>Dossiers recensés</th><th>Tickets ouverts</th><th>Tickets clôturés</th><th>Tickets modifiés</th></tr></thead><tbody><tr><th scope="row">2026-11-02</th><td>42</td><td>11</td><td>0</td><td>0</td></tr><tr><th scope="row">2026-11-03</th><td>42</td><td>13</td><td>0</td><td>0</td></tr><tr><th scope="row">2026-11-04</th><td>42</td><td>13</td><td>0</td><td>0</td></tr><tr><th scope="row">2026-11-05</th><td>42</td><td>13</td><td>0</td><td>0</td></tr><tr><th scope="row">2026-11-06</th><td>42</td><td>13</td><td>0</td><td>0</td></tr><tr><th scope="row">2026-11-07</th><td>42</td><td>13</td><td>0</td><td>0</td></tr></tbody></table></div>
 <p class="muted">Cette série concerne les relevés disponibles ; elle ne reconstitue pas les modifications entre deux relevés ni les progrès métiers.</p></section>
-<section id="espace-prive" class="private-entry">
-<h2>Accéder au tableau détaillé</h2>
-<p class="muted">Les données complètes restent dans un dépôt privé. Le code ci-dessous est un <strong>raccourci de navigation, pas une protection</strong> : la connexion à un compte GitHub autorisé reste obligatoire.</p>
-<form id="access-form" class="access-form">
-<label for="access-pin">Code rapide</label>
-<input id="access-pin" type="password" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" autocomplete="off" required>
-<button type="submit">Continuer</button>
-</form>
-<p id="access-status" class="muted" aria-live="polite"></p>
-<div id="private-target" hidden><p><a class="private-link" href="https://github.com/timetogrowup/PILOTAGE_GLOBAL/tree/main/espace-prive" target="_blank" rel="noopener noreferrer">Voir les pages de l’espace privé sur GitHub</a></p><p><a href="https://github.com/timetogrowup/PILOTAGE_GLOBAL/actions/workflows/suivi-quotidien.yml" target="_blank" rel="noopener noreferrer">Télécharger le portail HTML complet (archive GitHub Actions)</a></p><p class="muted">Dans la dernière exécution réussie, télécharger l’archive pilotage-espace-prive-html, la décompresser, puis ouvrir index.html dans le navigateur. GitHub exige une connexion autorisée. Le code rapide ne garantit aucune confidentialité.</p></div>
-</section>
-<script>
-(function(){
-var form=document.getElementById('access-form');
-form.addEventListener('submit',function(event){
-event.preventDefault();
-var pin=document.getElementById('access-pin');
-var status=document.getElementById('access-status');
-var link=document.getElementById('private-target');
-if(pin.value==='1405'){
-link.hidden=false;
-status.textContent='Lien affiché. Une connexion GitHub autorisée reste nécessaire.';
-}else{
-link.hidden=true;
-status.textContent='Code rapide incorrect.';
-}
-pin.value='';
-});
-})();
-</script>
-<footer>Publication automatisée. Les dossiers détaillés ne sont pas présents sur cette page publique ; ils restent accessibles uniquement avec les autorisations GitHub appropriées.</footer>
+<!-- PILOTAGE_PORTAIL_DEBUT --><section id="espace-prive" class="private-entry"><h2>Accéder au tableau détaillé</h2><p class="muted">Les fiches complètes s’ouvrent dans votre navigateur, dans un espace privé réservé à votre compte.</p><p><a data-testid="private-portal-link" class="private-link" href="https://pilotage-global-prive.ableox68.chatgpt.site" target="_blank" rel="noopener noreferrer">Ouvrir l’espace privé</a></p><p class="muted">Si une connexion est demandée, utilisez le compte ChatGPT propriétaire du portail.</p></section><!-- PILOTAGE_PORTAIL_FIN -->
+<footer>Publication automatisée. Les dossiers détaillés ne sont pas présents sur cette page publique ; leur accès nécessite une authentification au portail privé.</footer>
 </main></body></html>
