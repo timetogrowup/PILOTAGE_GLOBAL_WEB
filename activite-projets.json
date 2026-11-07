@@ -3,18 +3,18 @@
   "method": "Jours distincts de commits GitHub (par dépôt associé provisoirement), hors actions automatiques identifiées. Une association de dépôt peut couvrir plusieurs projets.",
   "projects": {
     "PG-001": {
-      "last_activity_date": "2026-11-01",
-      "days_since_last": 6,
-      "active_days_total": 10,
-      "active_days_30": 6,
-      "coverage": "historique_complet"
+      "last_activity_date": null,
+      "days_since_last": null,
+      "active_days_total": null,
+      "active_days_30": null,
+      "coverage": "non_disponible"
     },
     "PG-002": {
-      "last_activity_date": "2026-11-01",
-      "days_since_last": 6,
-      "active_days_total": 10,
-      "active_days_30": 6,
-      "coverage": "historique_complet"
+      "last_activity_date": null,
+      "days_since_last": null,
+      "active_days_total": null,
+      "active_days_30": null,
+      "coverage": "non_disponible"
     },
     "PG-003": {
       "last_activity_date": null,
@@ -31,18 +31,18 @@
       "coverage": "non_disponible"
     },
     "PG-005": {
-      "last_activity_date": "2026-11-01",
-      "days_since_last": 6,
-      "active_days_total": 10,
-      "active_days_30": 6,
-      "coverage": "historique_complet"
+      "last_activity_date": null,
+      "days_since_last": null,
+      "active_days_total": null,
+      "active_days_30": null,
+      "coverage": "non_disponible"
     },
     "PG-006": {
-      "last_activity_date": "2026-11-01",
-      "days_since_last": 6,
-      "active_days_total": 10,
-      "active_days_30": 6,
-      "coverage": "historique_complet"
+      "last_activity_date": null,
+      "days_since_last": null,
+      "active_days_total": null,
+      "active_days_30": null,
+      "coverage": "non_disponible"
     },
     "PG-007": {
       "last_activity_date": null,
