@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12",
+  "generated_at": "2026-11-13",
   "method": "Jours distincts de commits GitHub (par dépôt associé provisoirement), hors actions automatiques identifiées. Une association de dépôt peut couvrir plusieurs projets.",
   "projects": {
     "PG-001": {
@@ -46,14 +46,14 @@
     },
     "PG-007": {
       "last_activity_date": "2026-11-02",
-      "days_since_last": 10,
+      "days_since_last": 11,
       "active_days_total": 4,
       "active_days_30": 4,
       "coverage": "historique_complet"
     },
     "PG-008": {
       "last_activity_date": "2026-10-27",
-      "days_since_last": 16,
+      "days_since_last": 17,
       "active_days_total": 1,
       "active_days_30": 1,
       "coverage": "historique_complet"
@@ -67,14 +67,14 @@
     },
     "PG-010": {
       "last_activity_date": "2026-10-26",
-      "days_since_last": 17,
+      "days_since_last": 18,
       "active_days_total": 1,
       "active_days_30": 1,
       "coverage": "historique_complet"
     },
     "PG-011": {
       "last_activity_date": "2026-11-12",
-      "days_since_last": 0,
+      "days_since_last": 1,
       "active_days_total": 5,
       "active_days_30": 5,
       "coverage": "historique_complet"
@@ -109,7 +109,7 @@
     },
     "PG-016": {
       "last_activity_date": "2026-10-26",
-      "days_since_last": 17,
+      "days_since_last": 18,
       "active_days_total": 1,
       "active_days_30": 1,
       "coverage": "historique_complet"
@@ -137,7 +137,7 @@
     },
     "PG-020": {
       "last_activity_date": "2026-11-05",
-      "days_since_last": 7,
+      "days_since_last": 8,
       "active_days_total": 6,
       "active_days_30": 6,
       "coverage": "historique_complet"
@@ -207,7 +207,7 @@
     },
     "PG-030": {
       "last_activity_date": "2026-10-27",
-      "days_since_last": 16,
+      "days_since_last": 17,
       "active_days_total": 1,
       "active_days_30": 1,
       "coverage": "historique_complet"
@@ -270,7 +270,7 @@
     },
     "PG-039": {
       "last_activity_date": "2026-11-02",
-      "days_since_last": 10,
+      "days_since_last": 11,
       "active_days_total": 3,
       "active_days_30": 3,
       "coverage": "historique_complet"
@@ -291,7 +291,7 @@
     },
     "PG-042": {
       "last_activity_date": "2026-10-26",
-      "days_since_last": 17,
+      "days_since_last": 18,
       "active_days_total": 1,
       "active_days_30": 1,
       "coverage": "historique_complet"
